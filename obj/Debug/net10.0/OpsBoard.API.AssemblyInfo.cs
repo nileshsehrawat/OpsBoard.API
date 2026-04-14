@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpsBoard.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a08ec3e0ca4131dfdf447f8ca221c30403a90070")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpsBoard.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpsBoard.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

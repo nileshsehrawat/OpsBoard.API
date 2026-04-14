@@ -5,23 +5,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 // DB Context (SQLite for now)
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=opsboard.db"));
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
 // Middleware
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

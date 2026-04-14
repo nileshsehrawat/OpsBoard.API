@@ -1,6 +1,17 @@
-@OpsBoard.API_HostAddress = http://localhost:5162
+@OpsBoard_API_HostAddress = http://localhost:5162
 
-GET {{OpsBoard.API_HostAddress}}/weatherforecast/
+GET {{OpsBoard_API_HostAddress}}/api/resource
 Accept: application/json
+
+###
+
+POST {{OpsBoard_API_HostAddress}}/api/resource
+Content-Type: application/json
+
+{
+	"name": "Laptop",
+	"type": "Hardware",
+	"organizationId": 1
+}
 
 ###

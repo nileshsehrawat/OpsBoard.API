@@ -1,0 +1,39 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+*.sln.iml
+
+# Debug artifacts
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Publish output
+publish/
+wwwroot/
+
+# Test results
+TestResults/
+coverage/
+
+# Local environment files
+.env
+.env.*
