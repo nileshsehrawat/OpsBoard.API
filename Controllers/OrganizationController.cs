@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using OpsBoard.API.Data;
 using OpsBoard.API.Models;
 using OpsBoard.API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/organization")]
+[Authorize]
 public class OrganizationController : ControllerBase 
 {
   private readonly AppDbContext _context;

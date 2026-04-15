@@ -3,8 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using OpsBoard.API.Data;
 using OpsBoard.API.Models;
 using OpsBoard.API.DTOs;
+using Microsoft.AspNetCore.Authorization;
 [ApiController]
 [Route("api/resource")]
+[Authorize]
+
 public class ResourceController : ControllerBase
 {
   private readonly AppDbContext _context;
